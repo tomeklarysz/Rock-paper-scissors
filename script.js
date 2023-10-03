@@ -53,9 +53,11 @@ function play(playerSelection, computerSelection) {
 function game() {
     let i = 1;
     while (i<6) {
-        console.log(play("paper", getComputerChoice()));
+        console.log(play(player, getComputerChoice()));
         i++;
     }
 }
+
+let player = prompt("Choose rock, paper or scissors");
 
 game();
