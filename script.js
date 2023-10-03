@@ -17,8 +17,8 @@ function getComputerChoice() {
 
 function play(playerSelection, computerSelection) {
     
-    console.log(`You: ${playerSelection}`);
-    console.log(`You: ${computerSelection}`);
+    // console.log(`You: ${playerSelection}`);
+    // console.log(`You: ${computerSelection}`);
 
     playerSelection = playerSelection.toUpperCase();
     computerSelection = computerSelection.toUpperCase();
@@ -48,4 +48,14 @@ function play(playerSelection, computerSelection) {
         }
     }
 }
-console.log(play("paper", getComputerChoice()));
+// console.log(play("paper", getComputerChoice()));
+
+function game() {
+    let i = 1;
+    while (i<6) {
+        console.log(play("paper", getComputerChoice()));
+        i++;
+    }
+}
+
+game();
